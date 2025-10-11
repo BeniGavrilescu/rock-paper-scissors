@@ -47,11 +47,17 @@ for(let i = 1; i <= number; i++) {
         else {
             console.log("It's a tie");
         }
-        console.log("User points:", userPoints);
-        console.log("Computer points: ", computerPoints);
     }
     else {
         console.log("Wrong choose");
         i--;
     }
+    console.log("User points:", userPoints);
+    console.log("Computer points: ", computerPoints);
 }
+if(computerPoints > userPoints)
+    console.log("The computer win");
+else if(userPoints > computerPoints)
+    console.log("You win");
+else
+    console.log("Final: It's a tie");
