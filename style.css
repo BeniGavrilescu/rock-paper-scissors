@@ -1,0 +1,99 @@
+body {
+    background-image: url('upscalemedia-transformed\ \(1\).webp');
+    background-size: auto;
+    background-repeat: no-repeat;
+}
+
+.the-game .tools button{
+    height: 150px;
+    width: 150px;
+    font-size: 80px;
+    justify-content: center;
+    border-radius: 20px;
+    transition: 0.3s;
+    backdrop-filter: blur(9.1px);
+    background: rgba(255, 255, 255, 0.068);
+    border-color: white;
+    border-style: solid;  
+    margin: 10px;  
+}
+
+button:hover{
+    box-shadow: 10px 10px 10px;
+    cursor: pointer;
+    border-color: black;
+    background: rgba(17, 17, 17, 0.438);
+}
+
+.the-game {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* From https://css.glass */
+    background: rgba(255, 255, 255, 0.63);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(9.1px);
+    border: 5px solid rgba(0, 0, 0, 0.849);
+    max-width: 700px;
+}
+.the-game .tools {
+    margin: 15px;
+
+}
+
+.the-game .how-much button{
+    height: 80px;
+    width: 80px;
+    font-size: 30px;
+    background-color: rgba(255, 255, 255, 0.486);
+    backdrop-filter: blur(9.1px);
+    border-style: solid;
+    border-color: white;
+    transition: 0.3s;
+    border-radius: 16px;
+}
+
+.the-game .how-much input {
+    background-color: rgba(255, 255, 255, 0.349);
+    border-style: solid;
+    border-color: white;
+    height:80px;
+    border-radius: 15px;
+    margin: 10px;
+    width: 60%;
+    justify-content: center;
+    font-size: 40px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.the-game .how-much {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px;
+    transition: 0.3s;
+    max-width: 500px;
+}
+
+.the-game .ready {
+    margin: 15px;
+}
+
+.the-game .ready button {
+    background-color: rgba(255, 255, 255, 0.438);
+    border-style: solid;
+    border-color: white;
+    backdrop-filter: blur(9.1px);
+    height: 100px;
+    width: 500px;
+    transition: 0.3s;
+    border-radius: 16px;
+    font-size: 50px;
+}
+.main-part {
+    display: flex;
+    justify-content: center;
+}
