@@ -21,7 +21,7 @@ body {
 }
 
 button:hover{
-    box-shadow: 10px 10px 10px;
+    box-shadow: 10px 10px 10px black;
     cursor: pointer;
     border-color: black;
     background: rgba(17, 17, 17, 0.438);
@@ -33,11 +33,16 @@ button:hover{
     align-items: center;
     justify-content: center;
     /* From https://css.glass */
-    background: rgba(255, 255, 255, 0.63);
-    border-radius: 20px;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(9.1px);
-    border: 5px solid rgba(0, 0, 0, 0.849);
+    background: rgba(255, 255, 255, 0.21);
+  backdrop-filter: blur(27px);
+  -webkit-backdrop-filter: blur(27px);
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 
+    8px 7px 45px 1px rgba(0,0,0,0.73);
+  position: relative;
+  overflow: hidden;
+
     min-width: 700px;
     max-width: auto;
     margin: 10px;
@@ -71,6 +76,7 @@ button:hover{
     font-size: 40px;
     padding: 20px;
     box-sizing: border-box;
+    box-shadow: 8px 7px 45px 1px rgba(0,0,0,0.73);
 }
 
 .the-game .how-much {
@@ -117,6 +123,7 @@ button:hover{
     display: flex;
     justify-content: space-between;
     width: 100%;
+    font-size: 1.5em;
 }
 .left-player {
     display: flex;
@@ -128,7 +135,7 @@ button:hover{
 }
 .player-info {
     background-color: rgba(0, 0, 0, 0.219);
-    width: 120px;
+    width: 150px;
     height: 25px;
     border-radius: 12px;
     color: black;
@@ -164,16 +171,17 @@ button:hover{
     border-style: solid;
     border-width: 2px;
     flex-direction: column;
+    box-shadow: 8px 7px 45px 1px rgba(0,0,0,0.73);
 
 }
 .counter .countdown {
-    font-size: 20px;
+    font-size: 1.3em;
     font-family: "Oi", serif;
     font-weight: 400;
     font-style: normal;
 }
 .counter .number {
-    font-size: 70px;
+    font-size: 5em;
     font-family: "Oi", serif;
     font-weight: 400;
     font-style: normal;
@@ -198,6 +206,89 @@ button:hover{
     padding: 5px;
     background-color: rgba(0, 0, 0, 0.205);
     border-radius: 10px;
+    font-size: 1.5em;
+}
+.the-div {
+    display: flex;
+    justify-content: center;
+}
+.navigation-bar {
+    background-color: black;
+    width: 1400px;
+    min-width: 400px;
+    border-radius: 20px;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.21);
+  backdrop-filter: blur(27px);
+  -webkit-backdrop-filter: blur(27px);
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 
+    0 8px 32px rgba(0, 0, 0, 0.1),
+    inset 0 1px 0 rgba(255, 255, 255, 0.5),
+    inset 0 -1px 0 rgba(255, 255, 255, 0.1),
+    inset 0 0 2px 1px rgba(255, 255, 255, 0.1);
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+.left-side .profile-picture {
+    background: url("https://avatars.githubusercontent.com/u/200481648?s=400&u=4306ac367815cf5c8b5367f3523e548e3f7721d4&v=4");
+    height: 70px;
+    width: 70px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 30px;
+    border-style: solid;
+    border-color: black;
+}
+.right-side .profile-picture {
+    background: url("https://variety.com/wp-content/uploads/2024/06/5N7A0541-e1718042484447.jpg");
+    height: 70px;
+    width: 70px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 30px;
+    border-style: solid;
+    border-color: black;
+}
+
+.right-side {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+
+.right-side .name {
+    font-size: 0.8em;
+    margin: 5px;
+    justify-content: flex-end;
+    display: flex;
+}
+.right-side .moneyy {
+    font-size: 1.5em;
+    font-weight: bold;
+    justify-content: flex-start;
+}
+.right-side .info {
+    margin-right: 10px;
+}
+
+.left-side {
+    display: flex;
+    align-items: center;
+}
+.the-link {
+    font-size: 1em;
+    padding: 0.4em;
+    margin: 10px;
+    border-radius: 10px;
+    border-style: solid;
+    transition: 0.4s;
+    background-color: rgba(0, 0, 0, 0.685);
+    color: white;
 }
 
 @media (max-width: 1000px) {
