@@ -1,7 +1,9 @@
 body {
     background-image: url('upscalemedia-transformed\ \(1\).webp');
-    background-size: auto;
+    background-size: cover;
     background-repeat: no-repeat;
+    
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 .the-game .tools button{
@@ -32,11 +34,13 @@ button:hover{
     justify-content: center;
     /* From https://css.glass */
     background: rgba(255, 255, 255, 0.63);
-    border-radius: 16px;
+    border-radius: 20px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(9.1px);
     border: 5px solid rgba(0, 0, 0, 0.849);
-    max-width: 700px;
+    min-width: 700px;
+    max-width: auto;
+    margin: 10px;
 }
 .the-game .tools {
     margin: 15px;
@@ -83,7 +87,7 @@ button:hover{
 }
 
 .the-game .ready button {
-    background-color: rgba(255, 255, 255, 0.438);
+    background-color: rgba(240, 65, 65, 0.63);
     border-style: solid;
     border-color: white;
     backdrop-filter: blur(9.1px);
@@ -93,7 +97,111 @@ button:hover{
     border-radius: 16px;
     font-size: 50px;
 }
+.the-game .ready button:hover {
+    background-color: rgba(255, 0, 0, 0.863);
+}
 .main-part {
     display: flex;
     justify-content: center;
+}
+
+.the-game #player-icon {
+    height: 50px;
+    width: 50px;
+    border-radius: 25px;
+    background-color: black;
+    margin: 10px;
+    flex-direction: row;
+}
+.main-part .the-game .vs-player {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.left-player {
+    display: flex;
+    align-items: center;
+}
+.right-player {
+    display: flex;
+    align-items: center;
+}
+.player-info {
+    background-color: rgba(0, 0, 0, 0.219);
+    width: 120px;
+    height: 25px;
+    border-radius: 12px;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-color: black;
+    border-style: solid;
+    border-width: 2px;
+    font-weight: bold;
+}
+.left-player #player-icon {
+    background-image: url('https://img.freepik.com/free-photo/emotions-people-concept-headshot-serious-looking-handsome-man-with-beard-looking-confident-determined_1258-26730.jpg');
+    background-size: cover;
+    background-position: center;
+}
+.right-player #player-icon {
+    background-image: url("https://img.freepik.com/free-vector/graident-ai-robot-vectorart_78370-4114.jpg?semt=ais_hybrid&w=740&q=80");
+    background-size: cover;
+    background-position: center;
+}
+
+.counter {
+    height: 50%;
+    min-height: 200px;
+    margin: 15px;
+    width: 95%;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: radial-gradient( circle 349px at 0.3% 48.6%,  rgba(0,0,0,1) 0%, rgba(87,124,253,0.89) 100.7% );
+    border-style: solid;
+    border-width: 2px;
+    flex-direction: column;
+
+}
+.counter .countdown {
+    font-size: 20px;
+    font-family: "Oi", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.counter .number {
+    font-size: 70px;
+    font-family: "Oi", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.transactions {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    max-height: 300px;
+    overflow-y: auto;
+    overflow-x:hidden;
+}
+
+.transaction {
+    display: flex;
+    justify-content: space-around;
+    width: 95%;
+    box-sizing:initial;
+    margin: 10px;
+    padding: 5px;
+    background-color: rgba(0, 0, 0, 0.205);
+    border-radius: 10px;
+}
+
+@media (max-width: 1000px) {
+    .main-part {
+        display: grid;
+    }
 }
